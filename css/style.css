@@ -1,0 +1,479 @@
+/*********************************BODY***************************************/
+body {
+  margin: 0;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 999;
+  font-size: 4rem;
+  line-height: 5rem;
+  padding-top: 0px;
+  color: #0096aa;
+}
+
+h4 {
+  font-weight: 999;
+  font-size: 5rem;
+  line-height: 2rem;
+  padding-top: 0px;
+}
+
+/*********************************BODY***************************************/
+/*********************************JUMBO**************************************/
+.jumbo {
+  background: url(about.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.jumbo1 {
+  background: url(about2.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 890px) {
+  /*******mobile*****/
+  div.jumbo {
+    display: none;
+  }
+  div.btmbox {
+    background: rgba(3, 0, 155, 0.1);
+  }
+  div.jumboheader {
+    color: white;
+    padding-top: 50vh;
+  }
+  div.overlay {
+    display: -ms-grid;
+    display: grid;
+  }
+  div.jumboheader {
+    font-size: 4rem;
+    background-image: none;
+  }
+  div.container3 {
+    opacity: 1;
+  }
+  div.heads h3 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+  }
+  div.heads1 h3 {
+    font-size: 3rem;
+  }
+  div.brainbox {
+    background-size: 50%;
+  }
+  div.nambox {
+    background-size: 50%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  div.blacks {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.linkbox {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /*****TABLET an above*******/
+  div.jumbo1 {
+    display: none;
+  }
+}
+
+.jumboheader {
+  cursor: default;
+  color: white;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: 100vh;
+  grid-template-rows: 100vh;
+  height: 100vh;
+  width: 100%;
+  padding-top: 40vh;
+  font-family: 'Rock Salt', cursive;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+/*********************************JUMBO**************************************/
+/******************************BRAIN BOX*************************************/
+.brainbox {
+  background: url(brain3.png) no-repeat center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.quote {
+  font-family: 'Rock Salt', cursive;
+  padding-top: 50;
+  text-align: center;
+  padding: 70px 25px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-weight: 999;
+  color: black;
+}
+
+.nambox {
+  background: url(brain.png) no-repeat center;
+  display: -ms-grid;
+  display: grid;
+}
+
+/*********************************IMG CONTAINER******************************/
+.grid-container1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+
+.linkboxes {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.linkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  grid-gap: 2rem;
+  -ms-grid-columns: minmax(250px, 2fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+}
+
+.container3 {
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.container3 :hover {
+  opacity: 1;
+}
+
+.image {
+  width: 74%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.75;
+}
+
+.text {
+  font-size: 3rem;
+  margin-top: 60px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (min-width: 1350px) {
+  .pic2a {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+/*********************************IMG CONTAINER******************************/
+/***********************************terapias*********************************/
+.main {
+  left: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  cursor: default;
+}
+
+.textblock {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 769px) {
+  /************FULL SCREEN **************/
+  .textblock {
+    padding: 25px 25px;
+    -webkit-box-shadow: 1px 1px 3px 1px #888;
+    box-shadow: 1px 1px 3px 1px #888;
+    border-radius: 10px;
+    border: 1px black;
+    background-color: rgba(0, 0, 80, 0.033);
+  }
+}
+
+.textblock .col {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 250px;
+  height: 150px;
+  color: #343434;
+  border-right: 1px solid #dadada;
+  padding: 10px 10px;
+}
+
+p {
+  padding-top: 0px;
+  font-size: 2rem;
+  font-family: 'Rock Salt', cursive;
+  font-weight: 1;
+}
+
+.pic1 {
+  float: left;
+  padding-left: 2px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+
+.pic2 {
+  float: right;
+  padding-left: 20px;
+  padding-right: 2px;
+  border-radius: 20px;
+}
+
+.pic2a {
+  float: right;
+  padding-left: 20px;
+  padding-right: 2px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  div.main {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  h3 {
+    font-size: 3rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+.highlightme {
+  color: #0096aa;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.highlightme1 {
+  color: #0096aa;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/***********************************terapias*********************************/
+/************************************FOOTER**********************************/
+footer {
+  position: static;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-family: 'Poiret One', cursive;
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* The company logo */
+.footer-distributed .footer-left img {
+  width: 40%;
+}
+
+.footer-distributed h3 span {
+  color: #fbff00;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links :hover {
+  color: #37ff05;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p :hover {
+  color: #8cbad8;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #fbff00;
+  text-decoration: none;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
