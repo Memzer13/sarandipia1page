@@ -121,6 +121,13 @@ div.jumbo1 {
     display: grid;
 }
 
+@media screen and (max-width: 769px) {
+    /*****TABLET an above*******/
+    div.brainbox {
+        display: none;
+    }
+    }
+
 .quote {
     font-family: 'Rock Salt', cursive;
     padding-top: 50;
@@ -131,12 +138,25 @@ div.jumbo1 {
     font-weight: 999;
     color: black;
 }
+@media screen and (max-width: 769px) {
+    /*****TABLET an above*******/
+    div.quote {
+        font-size: 2rem;
+    }
+    }
 
+    @media screen and (max-width: 376px) {
+        /*****TABLET an above*******/
+        div.quote {
+            font-size: 1.1rem;
+        }
+        }
 .nambox {
     background: url(brain.png) no-repeat center;
     display: -ms-grid;
     display: grid;
 }
+
 
 /*********************************IMG CONTAINER******************************/
 .grid-container1 {
@@ -363,16 +383,16 @@ header {
 
 .footer-distributed .footer-links a {
     display: inline-block;
-    line-height: 1.8;
+    line-height: 1.2;
     text-decoration: none;
     color: inherit;
     font-size: 1.5rem;
 }
 
 .footer-distributed .footer-company-name {
-    color: #8f9296;
+    color: white;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -433,14 +453,17 @@ header {
     font-size: 13px;
     font-weight: normal;
     margin: 0;
+    font-family: 'Rock Salt', cursive;
 }
 
 .footer-distributed .footer-company-about span {
     display: block;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Rock Salt', cursive;
+    line-height: 29px;
 }
 
 .footer-distributed .footer-icons {
